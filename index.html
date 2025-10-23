@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECLIPSE WEAR | The Pinnacle of Modern Luxury</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Font: Playfair Display for headers (Luxurious) and Inter for body -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap');
+
+        .font-luxury {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        // Luxurious Black and Gold Palette
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-black': '#0A0A0A', // Ultra dark background
+                        'gold-accent': '#D4AF37', // Metallic Gold
+                        'off-white': '#FDFDFD', // Primary Text Color
+                        'gray-muted': '#A3A3A3', // Secondary Text/Dividers
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-deep-black text-off-white font-body min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-deep-black/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-12 py-5 flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-4xl font-black tracking-widest text-gold-accent font-luxury uppercase">ECLIPSE</h1>
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex space-x-12 text-sm font-medium tracking-wider">
+                <a href="#hero" class="hover:text-gold-accent transition duration-300 uppercase">Home</a>
+                <a href="#collections" class="hover:text-gold-accent transition duration-300 uppercase">Collections</a>
+                <a href="#ethos" class="hover:text-gold-accent transition duration-300 uppercase">The Craft</a>
+                <a href="#cta" class="hover:text-gold-accent transition duration-300 uppercase">Insider</a>
+            </nav>
+            <!-- CTA/Icons -->
+            <div class="flex items-center space-x-6">
+                <button class="text-off-white hover:text-gold-accent transition duration-150 text-xl font-bold">
+                    <!-- User Icon SVG -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                </button>
+                <button
+                    class="bg-gold-accent text-deep-black px-5 py-2 rounded-full text-sm font-semibold tracking-wider hover:bg-yellow-400 transition duration-300 shadow-xl">
+                    Cart (0)
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Cinematic Hero Section - Full Viewport Height -->
+        <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+            <!-- Background Image Placeholder (High-contrast, Moody) -->
+            <div class="absolute inset-0 bg-cover bg-center opacity-30"
+                style="background-image: url('https://placehold.co/1920x1200/202020/D4AF37?text=The+New+Standard');">
+            </div>
+            <div class="absolute inset-0 bg-deep-black/60"></div>
+
+            <div class="relative z-10 p-6 max-w-6xl mx-auto text-center">
+                <p class="text-lg md:text-xl text-gray-muted font-light mb-6 tracking-widest uppercase">The Pinnacle of
+                    Modern Luxury</p>
+                <h2
+                    class="text-7xl sm:text-9xl md:text-[10rem] font-black leading-none mb-10 text-off-white font-luxury">
+                    <span class="block animate-pulse">DEFINE</span> <span class="text-gold-accent">YOUR ERA</span>
+                </h2>
+
+                <a href="#collections"
+                    class="inline-block border-2 border-gold-accent text-off-white text-xl font-bold px-12 py-4 rounded-full hover:bg-gold-accent hover:text-deep-black transition duration-500 tracking-widest shadow-2xl">
+                    Explore New Arrivals
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Featured Collections - Editorial Grid -->
+        <section id="collections" class="py-24 md:py-36 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-5xl font-luxury font-bold text-center mb-16 text-off-white">The Current Season</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Collection 1: Mens (Large Vertical Card) -->
+                <div
+                    class="group relative overflow-hidden rounded-xl shadow-2xl transition duration-700 transform hover:scale-[1.01] hover:shadow-gold-accent/20 h-[600px] md:h-[800px]">
+                    <img src="https://placehold.co/800x1200/1F2937/D4AF37?text=Mens+Atelier"
+                        alt="Men's Atelier Collection"
+                        class="w-full h-full object-cover transition duration-700 group-hover:scale-105 opacity-80">
+                    <div class="absolute inset-0 bg-deep-black/50 transition duration-300 group-hover:bg-deep-black/30">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-10">
+                        <p class="text-sm font-medium text-gray-muted tracking-widest uppercase mb-2">COLLECTION I</p>
+                        <h4 class="text-5xl font-luxury font-bold text-off-white mb-4">ATELIER TAILORING</h4>
+                        <a href="#"
+                            class="text-gold-accent text-lg font-bold hover:text-off-white transition duration-300 border-b border-gold-accent pb-1">
+                            Shop The Men's Line &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-8">
+
+                    <!-- Collection 2: Womens (Horizontal Card) -->
+                    <div
+                        class="group relative overflow-hidden rounded-xl shadow-2xl transition duration-700 transform hover:scale-[1.02] hover:shadow-gold-accent/20 h-[384px]">
+                        <img src="https://placehold.co/1200x600/555555/D4AF37?text=Womens+Sculpt"
+                            alt="Women's Sculptural Wear"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105 opacity-80">
+                        <div
+                            class="absolute inset-0 bg-deep-black/50 transition duration-300 group-hover:bg-deep-black/30">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <p class="text-sm font-medium text-gray-muted tracking-widest uppercase mb-2">COLLECTION II
+                            </p>
+                            <h4 class="text-3xl font-luxury font-bold text-off-white mb-4">SCULPTURAL LINES</h4>
+                            <a href="#"
+                                class="text-gold-accent text-md font-bold hover:text-off-white transition duration-300 border-b border-gold-accent pb-1">
+                                View Women's Wear &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Collection 3: Accessories (Horizontal Card) -->
+                    <div
+                        class="group relative overflow-hidden rounded-xl shadow-2xl transition duration-700 transform hover:scale-[1.02] hover:shadow-gold-accent/20 h-[384px]">
+                        <img src="https://placehold.co/1200x600/151515/D4AF37?text=Accessories+Details"
+                            alt="Signature Accessories"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105 opacity-80">
+                        <div
+                            class="absolute inset-0 bg-deep-black/50 transition duration-300 group-hover:bg-deep-black/30">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <p class="text-sm font-medium text-gray-muted tracking-widest uppercase mb-2">COLLECTION III
+                            </p>
+                            <h4 class="text-3xl font-luxury font-bold text-off-white mb-4">SIGNATURE DETAILS</h4>
+                            <a href="#"
+                                class="text-gold-accent text-md font-bold hover:text-off-white transition duration-300 border-b border-gold-accent pb-1">
+                                Discover Accessories &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Ethos / The Craft - Horizontal/Divider Layout -->
+        <section id="ethos" class="py-24 md:py-36 border-t border-b border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-luxury font-bold text-center mb-16 text-off-white">The Uncompromising Craft
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-800">
+
+                    <!-- Feature 1: Quality -->
+                    <div class="p-8 flex flex-col items-center text-center">
+                        <span class="text-5xl mb-4 text-gold-accent">
+                            <!-- Diamond Icon SVG -->
+                            <svg class="w-10 h-10 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M5 3v4M3 5h4M6 17v4M18 17v4M17 19h4M12 2v20M5 12h14l-2.5-4.5L12 12l-2.5 4.5L5 12z">
+                                </path>
+                            </svg>
+                        </span>
+                        <h4 class="text-xl font-semibold mb-2 text-off-white">Unrivaled Materials</h4>
+                        <p class="text-gray-muted">Sourced globally for texture and longevity, ensuring a garment that
+                            endures.</p>
+                    </div>
+
+                    <!-- Feature 2: Design -->
+                    <div class="p-8 flex flex-col items-center text-center">
+                        <span class="text-5xl mb-4 text-gold-accent">
+                            <!-- Ruler Icon SVG -->
+                            <svg class="w-10 h-10 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M7 11.5V14m0-2.5v-2.5C7 8 8.12 7 9.5 7h5C16 7 17 8 17 9.5v5c0 1.5-1 2.5-2.5 2.5h-5C8 17 7 16 7 14.5zm0 0H5m12 0h2m-6 4v-2">
+                                </path>
+                            </svg>
+                        </span>
+                        <h4 class="text-xl font-semibold mb-2 text-off-white">Architectural Form</h4>
+                        <p class="text-gray-muted">Precision tailoring and engineered silhouettes create a signature,
+                            structured drape.</p>
+                    </div>
+
+                    <!-- Feature 3: Ethics -->
+                    <div class="p-8 flex flex-col items-center text-center">
+                        <span class="text-5xl mb-4 text-gold-accent">
+                            <!-- Leaf Icon SVG -->
+                            <svg class="w-10 h-10 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </span>
+                        <h4 class="text-xl font-semibold mb-2 text-off-white">Conscious Production</h4>
+                        <p class="text-gray-muted">A commitment to zero-waste goals and ethical labor standards
+                            globally.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Newsletter/Final CTA - Bold, Contrast Block -->
+        <section id="cta" class="py-20 md:py-32">
+            <div
+                class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-900 p-10 md:p-16 rounded-2xl text-center shadow-gold-accent/30 shadow-2xl border border-gray-800">
+                <h3 class="text-4xl md:text-5xl font-luxury font-bold mb-4 text-gold-accent">The Eclipse Insiders</h3>
+                <p class="text-xl mb-10 text-gray-muted">
+                    Unlock exclusive access to limited-edition pieces and private sales before the general release.
+                </p>
+                <form class="flex flex-col sm:flex-row max-w-lg mx-auto gap-4">
+                    <input type="email" placeholder="Your Curated Email Address" required
+                        class="flex-grow p-4 rounded-lg bg-deep-black border border-gray-700 text-off-white placeholder-gray-600 focus:ring-gold-accent focus:border-gold-accent transition duration-300 shadow-inner">
+                    <button type="submit"
+                        class="bg-gold-accent text-deep-black font-bold px-8 py-4 rounded-lg hover:bg-yellow-400 transition duration-300 shadow-xl text-lg tracking-wider">
+                        Join The Roster
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-900 pb-8 mb-8">
+
+                <div class="col-span-2 md:col-span-1">
+                    <h5 class="text-3xl font-luxury font-bold text-gold-accent mb-4">ECLIPSE</h5>
+                    <p class="text-sm text-gray-500">The new benchmark for refined apparel.</p>
+                </div>
+
+                <!-- Column 1 -->
+                <div>
+                    <h5 class="text-lg font-semibold mb-4 text-off-white">Shop</h5>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Atelier</a></li>
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Sculptural</a></li>
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Archive Sale</a></li>
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Lookbook '25</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h5 class="text-lg font-semibold mb-4 text-off-white">Service</h5>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Client Support</a></li>
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Shipping & Tax</a></li>
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Returns Portal</a></li>
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Sizing Chart</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h5 class="text-lg font-semibold mb-4 text-off-white">The Brand</h5>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#ethos" class="hover:text-gold-accent transition duration-150">Our Ethos</a></li>
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Careers</a></li>
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Press</a></li>
+                        <li><a href="#" class="hover:text-gold-accent transition duration-150">Privacy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="col-span-2 md:col-span-1">
+                    <h5 class="text-lg font-semibold mb-4 text-off-white">Global</h5>
+                    <div class="flex space-x-4 text-xl">
+                        <a href="#" class="text-gray-500 hover:text-gold-accent transition duration-150"
+                            aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M7.5 10A2.5 2.5 0 0 0 10 7.5h4A2.5 2.5 0 0 0 16.5 10v4A2.5 2.5 0 0 0 14 16.5h-4A2.5 2.5 0 0 0 7.5 14zm9.3-3.7A.8.8 0 1 1 17 5a.8.8 0 0 1-.2 1.8zm-9 0A.8.8 0 1 1 7.8 5a.8.8 0 0 1-.2 1.8zM12 2A10 10 0 1 0 2 12a10 10 0 0 0 10 10zM5.3 5.3A7.5 7.5 0 0 1 12 4a7.5 7.5 0 0 1 6.7 3.3 7.5 7.5 0 0 1 0 9.4A7.5 7.5 0 0 1 12 20a7.5 7.5 0 0 1-6.7-3.3 7.5 7.5 0 0 1 0-9.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gold-accent transition duration-150"
+                            aria-label="Pinterest">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.5 2 2 6.5 2 12c0 4.5 2.9 8.3 7 9.7V15H7v-3h2v-2c0-2.3 1.4-3.5 3.4-3.5 1 0 2 .2 2.2.4v2.1h-1.2c-1.1 0-1.3.5-1.3 1.2v1.6h2.5l-.4 2.8h-2.1V22c5.1-1.3 9-6 9-11C22 6.5 17.5 2 12 2z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gold-accent transition duration-150"
+                            aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8 7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m-1 5v7h2v-7zM12 12v7h2v-7c0-1.7 1.3-3 3-3s3 1.3 3 3v7h2v-7c0-2.8-2.2-5-5-5s-5 2.2-5 5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-sm text-gray-700 pt-6">
+                &copy; 2025 ECLIPSE. All Rights Reserved. The New Benchmark.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
